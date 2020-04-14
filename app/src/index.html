@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Info</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .title {
+      margin-bottom: 32px;
+    }
+    .info-table {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .info-table th,
+    .info-table td {
+      padding: 4px 8px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    .header-row {
+      background-color: #eee;
+    }
+    .header-row th {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">System Info</h1>
+
+    <table class="info-table">
+      <tr class="header-row">
+        <th colspan="2">Networking</th>
+      </tr>
+      <tr>
+        <th>Resolve www.google.com</th>
+        <td>{{hasConnection}}</td>
+      <tr>
+        <tr class="header-row">
+          <th colspan="2">URL</th>
+        </tr>
+        <tr>
+          <th>HREF</th>
+          <td>{{href}}</td>
+        <tr>
+        <th>Origin</th>
+        <td>{{origin}}</td>
+      <tr>
+        <th>Host</th>
+        <td>{{host}}</td>
+      <tr>
+        <th>Hostname</th>
+        <td>{{hostname}}</td>
+      <tr>
+        <th>Port</th>
+        <td>{{port}}</td>
+      <tr>
+        <th>Path</th>
+        <td>{{path}}</td>
+      <tr>
+        <th>Search</th>
+        <td>{{search}}</td>
+      <tr>
+        <th>Hash</th>
+        <td>{{hash}}</td>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "system-info",
+  "version": "1.0.0",
+  "description": "A simple web server that displays basic information about the system",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:roi-rekrytering/system-info.git"
+  },
+  "keywords": [
+    "system",
+    "info",
+    "node",
+    "docker"
+  ],
+  "author": "Malcolm Nihlén @ Roi Rekrytering <malcolm.nihlen@roirekrytering.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roi-rekrytering/system-info/issues"
+  },
+  "homepage": "https://github.com/roi-rekrytering/system-info#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
